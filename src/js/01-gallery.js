@@ -8,11 +8,13 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const newGallery = galleryItems
   .map(({ preview, original, description }) => {
     return `
-    <div><a class="gallery__item" href="${original}">
+    <div><a class="gallery__item" 
+    href="${original}">
     <img class="gallery__image" src="${preview}"
     alt="${description}"
     title="${description}" />
-    </a></div>
+    </a>
+    </div>
     `;
   })
   .join('');
